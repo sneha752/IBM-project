@@ -415,14 +415,4 @@ if __name__ == '__main__':
     # Initialize the database when the app starts
     init_db()
     app.run(debug=True)
-# For Vercel deployment
-from flask import Flask
-app = Flask(__name__)
-# ... (rest of your app code) ...
 
-# Make sure this is at the very end of the file
-if __name__ == '__main__':
-    # Initialize the database when the app starts
-    init_db()
-    app.run(debug=True)
-    # ... (rest of your Flask app code) ...
